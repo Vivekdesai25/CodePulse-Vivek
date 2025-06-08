@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vivek's Contribution Snake 🐍</title>
+  <style>
+    :root {
+      --bg-color-light: #ffffff;
+      --text-color-light: #222222;
+      --bg-color-dark: #121212;
+      --text-color-dark: #eeeeee;
+      --primary-color: #4caf50;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color-light);
+      color: var(--text-color-light);
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-dark);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      width: 80%;
+      max-width: 700px;
+      filter: drop-shadow(0 0 10px var(--primary-color));
+      margin-bottom: 2rem;
+      transition: filter 0.3s ease;
+    }
+
+    body.dark-mode img {
+      filter: drop-shadow(0 0 10px #81c784);
+    }
+
+    button.toggle-btn {
+      background: var(--primary-color);
+      color: #121212;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button.toggle-btn:hover {
+      background: #81c784;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My GitHub Contribution Snake 🐍</h1>
+  <p>Watch as my snake grows with every commit — feeding my coding skills one bite at a time!</p>
+  <img src="dist/github-contribution-grid-snake.svg" alt="Contribution Snake" />
+  <br />
+  <button class="toggle-btn" id="modeToggle">Switch to Dark Mode</button>
+
+  <script>
+    const toggleBtn = document.getElementById('modeToggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      if(body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = 'Switch to Light Mode';
+      } else {
+        toggleBtn.textContent = 'Switch to Dark Mode';
+      }
+    });
+  </script>
+</body>
+</html>
