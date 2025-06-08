@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Vivek's Contribution </title>
+  <title>Vivek's Contribution Snake 🐍</title>
   <style>
     :root {
       --bg-light: #ffffff;
@@ -15,7 +15,7 @@
     body {
       margin: 0;
       padding: 2rem;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       background-color: var(--bg-light);
       color: var(--text-light);
       transition: background 0.3s, color 0.3s;
@@ -28,28 +28,35 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
 
     p {
       font-size: 1.1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
-    img {
+    img.snake {
       width: 80%;
       max-width: 700px;
       filter: drop-shadow(0 0 10px var(--accent));
+      margin-bottom: 2rem;
       transition: filter 0.3s ease;
     }
 
-    body.dark-mode img {
+    body.dark-mode img.snake {
       filter: drop-shadow(0 0 10px #81c784);
     }
 
     .toggle-btn {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 30px;
@@ -63,15 +70,38 @@
     .toggle-btn:hover {
       background-color: #81c784;
     }
+
+    .stats {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: gray;
+    }
   </style>
 </head>
 <body>
-  <h1>Save My Contributions from this Snake plz</h1>
+  <h1>🐍 My GitHub Contribution Snake</h1>
+  <p>Hi, I'm Vivek — feeding my coding skills, one commit at a time!</p>
 
-  <img src="dist/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
+  <img class="snake" src="dist/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
 
-  <br>
+  <div class="stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=Vivekdesai25&show_icons=true&theme=tokyonight" alt="Vivek's GitHub stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vivekdesai25&theme=dark" alt="GitHub Streak" />
+  </div>
+
   <button class="toggle-btn" id="modeToggle">🌗 Switch Theme</button>
+
+  <footer>
+    🚀 Powered by caffeine & commits | 🐍 Snake is always hungry
+  </footer>
 
   <script>
     const toggle = document.getElementById('modeToggle');
