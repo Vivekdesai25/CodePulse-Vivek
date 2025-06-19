@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Vivek's Contribution Snake</title>
   <style>
     :root {
@@ -100,17 +100,16 @@
   <button class="toggle-btn" id="modeToggle">☀️ Switch to Light Mode</button>
 
   <footer>
-    🧠 Fueled by logic, bugs & late-night commits |But Snake eats code for breakfast 🍳 
+    🧠 Fueled by logic, bugs & late-night commits | But Snake eats code for breakfast 🍳
   </footer>
 
   <script>
     const toggle = document.getElementById('modeToggle');
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
-      toggle.textContent =
-        document.body.classList.contains('dark-mode')
-          ? '☀️ Switch to Light Mode'
-          : '🌗 Switch Theme';
+      toggle.textContent = document.body.classList.contains('dark-mode')
+        ? '☀️ Switch to Light Mode'
+        : '🌙 Switch to Dark Mode';
     });
   </script>
 </body>
