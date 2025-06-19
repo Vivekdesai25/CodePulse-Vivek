@@ -2,115 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Vivek's Contribution Snake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek Desai | Portfolio</title>
   <style>
-    :root {
-      --bg-light: #ffffff;
-      --text-light: #222222;
-      --bg-dark: #121212;
-      --text-dark: #eeeeee;
-      --accent: #4caf50;
-    }
-
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 2rem;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background 0.3s, color 0.3s;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
       text-align: center;
     }
 
-    body.dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
+    header {
+      padding: 50px 20px;
+      background: #4b6cb7;
+      background: linear-gradient(to right, #182848, #4b6cb7);
+      color: white;
     }
 
     h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      animation: bounce 2s infinite;
+      margin-bottom: 10px;
     }
 
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    section {
+      padding: 30px 20px;
     }
 
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    img.snake {
-      width: 80%;
-      max-width: 700px;
-      filter: drop-shadow(0 0 10px var(--accent));
-      margin-bottom: 2rem;
-      transition: filter 0.3s ease;
-    }
-
-    body.dark-mode img.snake {
-      filter: drop-shadow(0 0 10px #81c784);
-    }
-
-    .toggle-btn {
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 30px;
-      background-color: var(--accent);
-      color: #000;
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4b6cb7;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
     }
 
-    .toggle-btn:hover {
-      background-color: #81c784;
-    }
-
-    .stats {
-      margin: 2rem auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+    a.button:hover {
+      background-color: #35438f;
     }
 
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: gray;
+      padding: 20px;
+      background-color: #eaeaea;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
-<body class="dark-mode">
-  <h1>Welcome to Vivek's Commitverse</h1>
-  <p>I’m Vivek — committing crimes against bugs daily 🐞🚫</p>
+<body>
+  <header>
+    <h1>Hi, I'm Vivek Desai</h1>
+    <p>MCA Student | Data Analytics Enthusiast</p>
+  </header>
 
-  <img class="snake" src="dist/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
+  <section>
+    <h2>📄 Resume</h2>
+    <a class="button" href="https://github.com/Vivekdesai25/Who_i_am/raw/main/vivek%20resume.pdf" target="_blank">View Resume</a>
+  </section>
 
-  <div class="stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=Vivekdesai25&show_icons=true&theme=tokyonight" alt="Vivek's GitHub stats" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vivekdesai25&theme=dark" alt="GitHub Streak" />
-  </div>
+  <section>
+    <h2>💻 Projects</h2>
+    <a class="button" href="https://github.com/Vivekdesai25" target="_blank">GitHub Profile</a>
+  </section>
 
-  <button class="toggle-btn" id="modeToggle">☀️ Switch to Light Mode</button>
+  <section>
+    <h2>🌐 Portfolio</h2>
+    <a class="button" href="https://vivekdesai25.github.io/Vivekdesai25/" target="_blank">Visit Portfolio</a>
+  </section>
+
+  <section>
+    <h2>📫 Contact</h2>
+    <p>Email: vivekdesaipersonal@gmail.com</p>
+    <p>Phone: 6360228217</p>
+  </section>
 
   <footer>
-    🧠 Fueled by logic, bugs & late-night commits | But Snake eats code for breakfast 🍳
+    Made with ❤️ by Vivek Desai | © 2025
   </footer>
-
-  <script>
-    const toggle = document.getElementById('modeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggle.textContent = document.body.classList.contains('dark-mode')
-        ? '☀️ Switch to Light Mode'
-        : '🌙 Switch to Dark Mode';
-    });
-  </script>
 </body>
 </html>
