@@ -1,125 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vivek's Commitverse</title>
+  <meta name="description" content="Portfolio of Vivek Desai - Developer & Problem Solver" />
+  <meta name="theme-color" content="#4caf50" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito:wght@700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-light: #ffffff;
-      --text-light: #222222;
-      --bg-dark: #121212;
-      --text-dark: #eeeeee;
+      --bg-dark: #0e1a2b;
+      --text-dark: #f5f5f5;
       --accent: #4caf50;
+      --accent2: #00ffc8;
+      --font: 'Fira Code', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background 0.3s, color 0.3s;
-      text-align: center;
-    }
-
-    body.dark-mode {
+      font-family: var(--font);
       background-color: var(--bg-dark);
       color: var(--text-dark);
+      text-align: center;
+      padding: 2rem;
     }
 
     h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       animation: bounce 2s infinite;
     }
 
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+      50% { transform: translateY(-8px); }
     }
 
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    img.snake, .stats img {
-      width: 90%;
-      max-width: 700px;
-      filter: drop-shadow(0 0 10px var(--accent));
+    .typewriter {
+      font-size: 1.2rem;
+      color: var(--accent2);
       margin-bottom: 2rem;
-      transition: filter 0.3s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
     }
 
-    body.dark-mode img.snake, body.dark-mode .stats img {
-      filter: drop-shadow(0 0 10px #81c784);
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
     }
 
-    .toggle-btn {
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 30px;
-      background-color: var(--accent);
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .toggle-btn:hover {
-      background-color: #81c784;
+    @keyframes blink {
+      50% { border-color: transparent; }
     }
 
     .stats {
-      margin: 2rem auto;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+   .glow-box {
+  width: 700px;
+  max-width: 90vw;
+  margin: 2rem auto; /* centers all boxes */
+  background-color: #0e1a2b;
+  border: 2px solid rgba(0, 255, 200, 0.4);
+  box-shadow: 0 0 18px rgba(0, 255, 200, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInZoom 0.8s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+    .glow-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 255, 200, 0.6);
+    }
+
+    .glow-box img {
+      width: 100%;
+      display: block;
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 2rem;
+      margin-top: 3rem;
+      color: #ffd166;
+    }
+
+    .snake {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 10px;
+      margin: 1.5rem auto;
+      box-shadow: 0 0 15px var(--accent);
     }
 
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: gray;
+      margin-top: 4rem;
+      border-top: 1px solid #444;
+      padding-top: 1rem;
+      font-size: 1rem;
+      color: var(--text-dark);
     }
+
+    footer a {
+      font-size: 1.5rem;
+      color: var(--accent2);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .floating-contact {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent2);
+      color: #000;
+      padding: 12px 16px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 0 10px #8e2525;
+      text-decoration: none;
+      z-index: 99;
+    }
+    
   </style>
 </head>
-<body class="dark-mode">
+<body>
+
   <h1>Welcome to Vivek's Commitverse</h1>
-  <p>I’m Vivek — committing crimes against bugs daily 🐞🚫</p>
+  <br>
+  <p class="typewriter">I’m Vivek — committing crimes against bugs daily 🐞🚫</p>
 
-  <!-- GitHub Snake -->
-  <img class="snake" src="https://raw.githubusercontent.com/Vivekdesai25/Vivekdesai25/main/dist/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
-
-  <!-- GitHub Stats Section -->
-  <div class="stats">
-    <!-- GitHub Overall Stats -->
-    <img src="https://github-readme-stats.vercel.app/api?username=Vivekdesai25&show_icons=true&theme=tokyonight" alt="Vivek's GitHub Stats" />
-    
-    <!-- GitHub Streak Stats -->
-    <img src="https://streak-stats.demolab.com/?user=Vivekdesai25&theme=tokyonight" alt="GitHub Streak" />
-    
-    <!-- Top Languages Used -->
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vivekdesai25&layout=compact&theme=tokyonight" alt="Top Languages" />
-  </div>
-
-  <!-- Theme Toggle Button -->
-  <button class="toggle-btn" id="modeToggle">☀️ Switch to Light Mode</button>
-
-  <footer>
-    🧠 Fueled by logic, bugs & late-night commits | But Snake eats code for breakfast 🍳
-  </footer>
-
+ 
+  <div id="particles-js" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
-    const toggle = document.getElementById('modeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggle.textContent = document.body.classList.contains('dark-mode')
-        ? '☀️ Switch to Light Mode'
-        : '🌙 Switch to Dark Mode';
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "color": { "value": "#00ffc8" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.6 },
+        "size": { "value": 3 },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "events": { "onhover": { "enable": true, "mode": "repulse" } },
+        "modes": { "repulse": { "distance": 100 } }
+      },
+      "retina_detect": true
     });
   </script>
+
+  <h2>💡 This is My GitHub Stat Sheet – Where HTML & CSS is in Progress ...</h2>
+
+  <img class="snake" src="https://raw.githubusercontent.com/Vivekdesai25/Vivekdesai25/main/dist/github-contribution-grid-snake.svg" alt="GitHub Snake Animation" />
+
+  
+  <div class="stats">
+    <div class="glow-box">
+      <img src="https://github-readme-stats.vercel.app/api?username=Vivekdesai25&hide=stars&show_icons=true&theme=tokyonight&icon_color=ffcc00&title_color=00ffc8&text_color=ffffff&bg_color=0e1a2b" alt="GitHub Stats" />
+    </div>
+    <div class="glow-box">
+      <img src="https://streak-stats.demolab.com/?user=Vivekdesai25&theme=tokyonight" alt="GitHub Streak" />
+    </div>
+  </div>
+
+  <div class="glow-box">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vivekdesai25&layout=compact&theme=tokyonight" alt="Top Languages" />
+  </div>
+  
+  <footer>
+    <p>
+ <br>
+      <big>🌱 Still growing, still learning. Thanks for joining the journey!<big>
+    </p>
+    <p style="margin-top: 1.2rem;">
+      <a  href="https://github.com/Vivekdesai25" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://leetcode.com/u/vivek252003/" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="https://www.linkedin.com/in/vivek-desai-236887259" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </p>
+   <p style="margin-top: 2rem; font-weight: bold; font-size: 1.2rem; color: #f6ff33;">
+   <i><big>🚧 Portfolio Coming Soon...<i><big>
+</p>
+
+  </footer>
+  
+  <a href="mailto:vivekdesaipersonal@gmail.com" class="floating-contact">📞 Contact Me</a>
 </body>
-</html>
