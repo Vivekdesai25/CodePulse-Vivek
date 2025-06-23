@@ -1,5 +1,8 @@
-## 🌐 Connect with Me
+ ### Ohh...No!  **Python** eating my delicious code.
+ _Feed the snake, grow the **skill** — _commit, create, and thrill__
+![Snake animation](dist/github-contribution-grid-snake.svg)
 
+## 🌐 BTW, Connect with Me Here...
 <p align="left">
   <a href="mailto:vivekdesaipersonal@gmail.com" target="_blank">
     <img src="https://img.icons8.com/color/48/gmail--v1.png" alt="gmail"/>
@@ -10,15 +13,6 @@
   <a href="https://leetcode.com/u/vivek252003/" target="_blank">
     <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="leetcode"/>
   </a>
-  <a href="https://github.com/Vivekdesai25" target="_blank">
-    <img src="https://img.icons8.com/material-rounded/48/github.png" alt="github"/>
-  </a>
-  <a href="tel:+916360228217" target="_blank">
-    <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="call"/>
-  </a>
+  
 </p>
  
- ### Ohh...No!  **Python** eating my delicious code.
- _Feed the snake, grow the **skill** — _commit, create, and thrill__
-![Snake animation](dist/github-contribution-grid-snake.svg)
-
