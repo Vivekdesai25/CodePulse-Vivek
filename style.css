@@ -196,3 +196,45 @@ footer a {
     padding: 10px 14px;
   }
 }
+/* Floating button - simplified */
+.floating-contact {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #00ffc8;
+  color: #0e1a2b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  z-index: 1000;
+  display: none; /* Shown via JS */
+  transition: background-color 0.2s ease;
+}
+
+.floating-contact:hover {
+  background-color: #00e6b0;
+}
+
+/* Footer version of button - smaller and clean */
+.footer-contact {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer-contact-btn {
+  background-color: #00ffc8;
+  color: #0e1a2b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.footer-contact-btn:hover {
+  background-color: #00e6b0;
+}
