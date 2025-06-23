@@ -1,11 +1,22 @@
-## 👨‍💻 Connect with Me
+## 🌐 Connect with Me
 
-[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white&style=for-the-badge)](https://github.com/Vivekdesai25)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/vivek-desai-236887259)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?logo=leetcode&logoColor=white&style=for-the-badge)](https://leetcode.com/u/vivek252003/)
-[![Gmail](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:vivekdesaipersonal@gmail.com)
-[![Phone](https://img.shields.io/badge/Call-6360228217-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+916360228217)
- 
+<p align="left">
+  <a href="mailto:vivekdesaipersonal@gmail.com" target="_blank">
+    <img src="https://img.icons8.com/color/48/gmail--v1.png" alt="gmail"/>
+  </a>
+  <a href="https://www.linkedin.com/in/vivek-desai-236887259" target="_blank">
+    <img src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+  </a>
+  <a href="https://leetcode.com/u/vivek252003/" target="_blank">
+    <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="leetcode"/>
+  </a>
+  <a href="https://github.com/Vivekdesai25" target="_blank">
+    <img src="https://img.icons8.com/material-rounded/48/github.png" alt="github"/>
+  </a>
+  <a href="tel:+916360228217" target="_blank">
+    <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="call"/>
+  </a>
+</p>
  
  ### Ohh...No!  **Python** eating my delicious code.
  _Feed the snake, grow the **skill** — _commit, create, and thrill__
