@@ -55,15 +55,6 @@ h1 {
   50% { border-color: transparent; }
 }
 
-/* GitHub Stats */
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
 /* Glowing Stat Boxes */
 .glow-box {
   width: 700px;
@@ -136,24 +127,104 @@ footer a {
   text-decoration: none;
 }
 
-/* Floating Button */
+/* Floating Contact Button - shows while scrolling */
 .floating-contact {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: var(--accent2);
-  color: #000;
-  padding: 12px 16px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  box-shadow: 0 0 10px #8e2525;
+  bottom: 16px;
+  right: 16px;
+  background-color: var(--accent2);
+  color: #0e1a2b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
   text-decoration: none;
-  z-index: 99;
+  z-index: 1000;
+  display: none;
+  transition: background-color 0.2s ease;
 }
 
-/* For mobile */
+.floating-contact:hover {
+  background-color: #00e6b0;
+}
 
+/* Footer Contact Button - shown at the end */
+.footer-contact {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer-contact-btn {
+  background-color: var(--accent2);
+  color: #0e1a2b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.footer-contact-btn:hover {
+  background-color: #00e6b0;
+}
+
+/* Theme toggle icon */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  font-size: 1.6rem;
+  color: var(--accent2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.theme-toggle label:hover {
+  transform: scale(1.2);
+}
+
+/* Light Mode Support */
+body.light-mode {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode .typewriter {
+  color: #333;
+  -webkit-text-fill-color: unset;
+  background: none;
+}
+
+body.light-mode .glow-box {
+  background: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .footer-contact-btn,
+body.light-mode .floating-contact {
+  background-color: #111;
+  color: #fff;
+  box-shadow: none;
+}
+
+body.light-mode .footer-icons a {
+  color: #000;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   body {
     padding: 1rem;
@@ -175,11 +246,6 @@ footer a {
     animation: none;
   }
 
-  .stats {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
   .glow-box {
     width: 95%;
     margin: 1rem auto;
@@ -191,50 +257,13 @@ footer a {
     margin: 0 6px;
   }
 
+  .footer-contact-btn,
   .floating-contact {
-    font-size: 1rem;
-    padding: 10px 14px;
+    font-size: 0.8rem;
+    padding: 6px 10px;
   }
-}
-/* Floating button - simplified */
-.floating-contact {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  background-color: #00ffc8;
-  color: #0e1a2b;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
-  z-index: 1000;
-  display: none; /* Shown via JS */
-  transition: background-color 0.2s ease;
-}
 
-.floating-contact:hover {
-  background-color: #00e6b0;
-}
-
-/* Footer version of button - smaller and clean */
-.footer-contact {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-.footer-contact-btn {
-  background-color: #00ffc8;
-  color: #0e1a2b;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.2s ease;
-}
-
-.footer-contact-btn:hover {
-  background-color: #00e6b0;
+  .theme-toggle label {
+    font-size: 1.4rem;
+  }
 }
