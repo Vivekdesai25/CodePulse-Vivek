@@ -20,7 +20,6 @@ body {
   padding: 2rem;
 }
 
-/* Headings */
 h1 {
   font-size: 2.8rem;
   background: linear-gradient(to right, var(--accent), var(--accent2));
