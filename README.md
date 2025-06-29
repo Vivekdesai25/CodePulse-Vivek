@@ -3,7 +3,7 @@
  _Feed the snake, grow the **skill** — _commit, create, and thrill__
 ![Snake animation](dist/github-contribution-grid-snake.svg)
 
-## 🌐BTW, Connect with Me Here...
+## 🌐 BTW, Connect with Me Here...
 <p align="left">
   <a href="mailto:vivekdesaipersonal@gmail.com" target="_blank">
     <img src="https://img.icons8.com/color/48/gmail--v1.png" alt="gmail"/>
