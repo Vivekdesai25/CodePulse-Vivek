@@ -1,3 +1,4 @@
+
  ### Ohh...No!  **Python** eating my delicious code.
  _Feed the snake, grow the **skill** — _commit, create, and thrill__
 ![Snake animation](dist/github-contribution-grid-snake.svg)
@@ -15,4 +16,7 @@
   </a>
   
 </p>
+### 📊 My LeetCode Stats
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/vivek252003?theme=wtf&font=IBM%20Plex%20Sans%20Devanagari)
  
