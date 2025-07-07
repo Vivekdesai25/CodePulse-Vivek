@@ -10,7 +10,7 @@
   <a href="https://www.linkedin.com/in/vivek-desai-236887259" target="_blank">
     <img src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
   </a>
-  <a href="https://leetcode.com/u/vivek252003/" target="_blank">
+  <a href="https://leetcode.com/u/Im_Vivek_Desai/" target="_blank">
     <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="leetcode"/>
   </a>
   
