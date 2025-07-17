@@ -4,7 +4,7 @@
 
 
 ## 🎨 **Crafted with Code & Curiosity**  
-#### 🚀 👉 [**🌐 Step Into My World of Web Practice**](https://vivekdesai25.github.io/CodePulse-Vivek/)
+### 🚀 👉 [**🪄 Step Into My World of Web Practice**](https://vivekdesai25.github.io/CodePulse-Vivek/)
 
 <br>
 
