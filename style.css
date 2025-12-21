@@ -5,6 +5,47 @@
   --accent2: #00ffc8;
   --font: 'Fira Code', monospace;
 }
+/* ===== VERTICAL DASHBOARD ===== */
+.dashboard-column {
+  display: flex;
+  flex-direction: column;   /* VERTICAL */
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin: 3rem auto;
+}
+@media (max-width: 768px) {
+  .dashboard-card {
+    width: 95%;
+    height: auto;      /* allows content to expand */
+  }
+}
+
+
+
+/* ===== SAME SHAPE & SIZE ===== */
+.dashboard-card {
+  width: 100%;
+  max-width: 900px;         /* SAME WIDTH */
+  height: 220px;            /* SAME HEIGHT */
+  background: #0e1a2b;
+  border-radius: 16px;
+  padding: 24px;
+
+  border: 2px solid rgba(0, 255, 200, 0.4);
+  box-shadow: 0 0 18px rgba(0, 255, 200, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OPTIONAL HOVER */
+.dashboard-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.6);
+  transition: all 0.3s ease;
+}
 
 /* RESET */
 * {
