@@ -5,6 +5,104 @@
   --accent2: #00ffc8;
   --font: 'Fira Code', monospace;
 }
+/* MAIN CARD */
+.summary-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1100px;          /* LARGER */
+  height: 260px;              /* LARGER */
+  margin: 3rem auto;
+  padding: 30px 40px;
+
+  background: #0e1a2b;
+  border-radius: 18px;
+  border: 2px solid rgba(0, 255, 200, 0.45);
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.45);
+}
+
+/* ITEMS */
+.summary-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.summary-item.center {
+  gap: 12px;
+}
+
+/* NUMBERS */
+.summary-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6aa6ff;
+}
+
+/* LABELS */
+.summary-label {
+  font-size: 1.1rem;
+  color: #00ffc8;
+}
+
+.summary-label.highlight {
+  color: #c084fc;
+}
+
+/* SUBTEXT */
+.summary-sub {
+  font-size: 0.9rem;
+  color: #9aaecb;
+}
+
+/* DIVIDER */
+.summary-divider {
+  width: 2px;
+  height: 70%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #00ffc8,
+    transparent
+  );
+}
+
+/* STREAK RING */
+.streak-ring {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid #00ffc8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.streak-ring span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .summary-card {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .summary-divider {
+    width: 70%;
+    height: 2px;
+  }
+}
+
 /* ===== VERTICAL DASHBOARD ===== */
 .dashboard-column {
   display: flex;
