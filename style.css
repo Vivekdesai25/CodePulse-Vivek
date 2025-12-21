@@ -20,6 +20,39 @@
     height: auto;      /* allows content to expand */
   }
 }
+/* ===== VERTICAL STATS LAYOUT ===== */
+.stats-container {
+  display: flex;
+  flex-direction: column;   /* VERTICAL */
+  align-items: center;
+  gap: 30px;
+  margin: 3rem auto;
+}
+
+/* ===== SAME SHAPE & SIZE ===== */
+.stat-card {
+  width: 100%;
+  max-width: 900px;         /* SAME WIDTH */
+  height: 220px;            /* SAME HEIGHT */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE CONTROL */
+.stat-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .stat-card {
+    width: 95%;
+    height: auto;
+  }
+}
 
 
 
