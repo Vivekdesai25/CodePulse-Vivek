@@ -13,8 +13,5 @@
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/Im_Vivek_Desai?theme=tokyonight&font=IBM%20Plex%20Sans%20Devanagari)
 
-
-![Streak](https://streak-stats.demolab.com?user=Vivekdesai25&theme=radical)
-
 ### 🥇 Top Contributed Repositories
 ![](https://github-contributor-stats.vercel.app/api?username=Vivekdesai25&limit=5&theme=dark&combine_all_yearly_contributions=true)
